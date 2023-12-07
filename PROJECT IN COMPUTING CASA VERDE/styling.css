@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Aladin&family=Glass+Antiqua&family=Grandiflora+One&family=Playpen+Sans&display=swap');
+		
+body{
+overflow-x: hidden;
+background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(bgbuildingpay.png);
+background-repeat: repeat;
+width: 100vw;
+height: 100vh;
+ }        
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif,Benguit, Loubag;
+	box-sizing: border-box;
+	
+}
+head{
+	background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(bgbuilding.jpg);
+
+}
+
+.navbar{
+    width: 90%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+width: 100px;
+margin-top: -35px;
+padding:0;
+cursor: pointer;
+}
+
+.navbar ul li{
+   list-style: none;
+   display: inline-block;
+   margin: -40px 30px;
+   position:relative
+}
+
+.navbar ul li a{
+text-decoration: none;
+color: #fff;
+text-transform: uppercase;
+padding-top:0;
+}
+
+.Banner{
+width: 100%;
+height: 90px;
+background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(evgeni-evgeniev-LPKk3wtkC-g-unsplash.jpg);
+border: white solid 0.5px;
+background-size: cover;
+background-position: center;
+}
+
+.navbar ul li::after{
+content: '';
+height: 1.5px;
+width: 0%;
+background: rgb(118, 89, 22);
+position: absolute;
+left: 0;
+bottom: -5px;
+transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+width: 100%;
+}
+
+.Banner{
+	width: 100%;
+	height: 90px;
+	background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(evgeni-evgeniev-LPKk3wtkC-g-unsplash.jpg);
+	background-size: cover;
+	background-position: center;
+	}
+
+.title{
+font-size: 30px;
+text-align: center;
+margin-left: 3rem ;
+}
+
+.container{
+display: flex;
+flex-direction: row;
+justify-content: right;
+align-items:right;
+gap: 0.5rem;
+margin-top: 2rem;
+margin-bottom: 2rem;
+margin-right: 2rem;
+padding:0;
+
+}
+
+.HallA-plan,.HallB-plan,.Pool-plan,.Garden-plan{
+   display:grid;
+   grid-template-columns: 1fr 8fr 2fr;
+   width: 90%;
+   height: 40%;
+   padding: 1rem;
+   margin-top: 12px;
+   margin-right: 20px;
+   gap: 1rem;
+	transition: 0.3s ease-in-out;
+	background-color: #fff;
+	z-index: 10;
+	background-image: url(white.webp);
+   
+}
+.HallA-plan:hover,.HallB-plan:hover,.Pool-plan:hover,.Garden-plan:hover{
+   cursor: pointer;
+   background-color: #7a7d86;
+   transition: 0.3s ease-in-out;
+   border-radius: 0.5rem;
+   border-bottom: none;
+}
+.HallA-plan:hover{
+	background-image: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),url(Hall\ A.jpg);
+	background-size: cover;
+	color: #F6BE00;
+	transform: scale(1.2);
+	transition: 0.5s ease-in-out;
+	
+}
+.HallB-plan:hover{
+	background-image: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),url(Hall\ B.jpg);
+	background-size: cover;
+	color: #5E17EB;
+	transform: scale(1.2);
+	transition: 0.5s ease-in-out;
+
+}
+.Pool-plan:hover{
+	background-image: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),url(Pools.jpg);
+	background-size: cover;
+	color: #1158D1;
+	transform: scale(1.2);
+	transition: 0.5s ease-in-out;
+
+}
+.Garden-plan:hover{
+	background-image: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),url(Garden.jpg);
+    background-size: cover;
+	color: #eafd3c;
+	transform: scale(1.2);
+	transition: 0.5s ease-in-out;
+
+}
+
+.HallA-plan {
+	  border-bottom: 0.5px solid #131722;
+	  
+   }
+.HallB-plan {
+	  border-bottom: 0.5px solid #131722;
+   }		   
+.Pool-plan {
+	  border-bottom: 0.5px solid #131722;
+   }
+.plan-title{
+	margin-bottom: 0.5rem;
+}		   
+small{
+	color: #7a7d86
+}
+.HallA-Price small{
+display:block;
+margin-top: 0.5rem;
+text-align:right;
+}
+.HallB-Price small{
+display:block;
+margin-top: 0.5rem;
+text-align:right;		
+}
+.Pool-Price small{
+display:block;
+margin-top: 0.5rem;	
+text-align:right;
+}
+.Garden-Price small{
+display:block;
+margin-top: 0.5rem;	
+text-align:right;
+}
+
+.checkout-container{
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+	min-width: 300px;
+	min-height:300px;
+	margin-top: 1rem;
+	background-color: #7a7d86;
+	padding: 1rem;
+	border-radius: 15px;
+}
+.plan-type, .billing, .checkout-btn{
+	width:100%;
+	padding-bottom: 1rem;
+	margin-bottom:0.5rem;
+	display:flex;
+	justify-content: space-between;
+}
+
+.plan-type{
+border-bottom: 1px solid #131722;
+}
+
+.checkout-btn{
+background-color: #DFC470;
+border: none;
+outline: none;
+cursor:pointer;
+border-radius: 15px;
+padding: 1rem 35%;
+font-size: 1.5rem;
+transition: 0.3s ease-in-out;
+}
+
+.checkout-btn:hover{
+	background-color: #F6BE00;
+}
+.billing-period{
+	display: block;
+	margin-top: 0.5rem;
+}
+@media screen and(max-width:768px){
+	.container{
+		flex-direction: column;
+		gap:40vh;
+	}
+	.checkout-container{
+		min-width: 80%;
+	}
+}
+
+  .HallA-description h3{
+font-family: 'Glass Antiqua', cursive;
+font-size:25px;
+font-weight: 300;
+color: #DFC470;
+  }
+ .HallB-description h3{
+font-family: 'Playpen Sans', cursive;
+font-size:20px;
+font-weight: 300;
+color: #5E17EB;
+}
+.Pool-description h3{
+font-family: 'Grandiflora One', cursive;
+font-size:25px;
+font-weight: 600;
+color: #1158D1;
+}
+.Garden-description h3{
+font-family: 'Aladin', cursive;
+font-size:25px;
+font-weight: 300;
+color: #ecff44;
+}
+
+
+.back-btn{
+width: 100%;
+margin:1rem;
+background-color: #DFC470;
+border: none;
+outline: none;
+cursor:pointer;
+border-radius: 15px;
+padding: 1rem 35%;
+font-size: 1.5rem;
+transition: 0.3s ease-in-out;
+}
+
+.back-btn:hover{
+	background-color: #F6BE00;
+}
+
+.receipt-details{
+	color: white;
+}
+
+input[type=radio]{
+	opacity: 0;
+}

@@ -1,0 +1,288 @@
+<!----ROBERT CAYAGO and PAUL CARLO V. POLVITO-->
+<!------INFORMATION TECHNOLOGY-->
+<!----------IT11S3-->	
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport">
+<link rel="stylesheet" href="styling.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.info{
+float:left;
+  max-width: 600px;
+  width: 80%;
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+  margin: 3% 3% 3% 3%;
+}
+.info .title{
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+}
+.content form .user-details{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+form .user-details .input-box{
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
+}
+form .input-box span.details{
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.user-details .input-box input{
+  height: 45px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+  border-color: #ccc;
+.customer-info{
+   float:left;
+	   padding: 10px;
+	   margin-left:50px;
+	   display:grid;
+	   
+}
+}
+
+label {
+    display: flex;
+    font-weight: bold;
+    text-align:  left;
+	padding-top: 0;
+	margin-bottom: 10px;
+}
+input{
+    margin-bottom: 10px;
+}
+
+input, select {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    margin-left: 5%;
+}
+
+input:focus, select:focus, button:focus {
+    outline: none;
+    border-color: #333;}
+	
+	.icon-container {
+    margin-bottom: 10px;
+    padding: 7px 0;
+    font-size: 24px;
+    text-align: left;
+    margin-left: 13%;
+  }
+  .payment{
+    border: 1 solid rgb(118, 97, 32);
+    width: 90vh;
+    margin-top: 5%;
+    height: 90vh;
+  }
+  .credit-details, .form-group{
+  display:grid;
+  }
+  
+  .column payment{
+  float: left;
+  width: 40%;
+  padding: 10px;
+  display:flex;
+  flex-wrap:wrap;
+  
+}
+
+.row:after {
+margin:0;
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+
+<body>
+    <div class="Banner">
+        <div class="navbar">
+            <img src="CASA_VERDE-removebg-preview.png" class="logo">
+            <ul>
+                <li><a href="website.html">Home</a></li>
+                <li><a href="shop.html">About us</a></li>
+                <li><a href="venue.html">VENUES</a></li>
+                <li><a href="new 2.html">Payment</a></li>
+            </ul>
+        </div>
+    </div>
+    <h1 class="title"></h1>
+    <div class="info">
+       <div class="title">Payment</div>
+       <div class="content">
+         <form action="#" id="form-info">
+           <div class="user-details">
+             <div class="input-box">
+               <span class="details">Name</span>
+               <input type="text" id="customerName" placeholder="Enter your name" required>
+             </div>
+             <div class="input-box">
+               <span class="details">Email</span>
+               <input type="text" id="customerMail" placeholder="Enter your Email" required>
+             </div>
+             <div class="input-box">
+               <span class="details">Number</span>
+               <input type="text" id="customerNum" placeholder="Enter your Number" required>
+             </div>
+             <div class="input-box">
+               <span class="details">Date</span>
+                 <input type="date" id="date" name="date" placeholder="Select the date of the event" required>
+             </div>
+             <div class="input-box">
+               <span class="details">Time</span>
+               <input type="time" id="time" name="time" placeholder="Select the time of the event" required>
+             </div>
+             </div>
+           </div>
+                       <label for="fname">Accepted Cards</label>
+                       <div class="icon-container">
+                           <i class="fa fa-cc-visa" style="color:navy;"></i>
+                           <i class="fa fa-cc-amex" style="color:blue;"></i>
+                           <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                           <i class="fa fa-cc-discover" style="color:orange;"></i>
+                           <i class="fa fa-cc-paypal" style="color: skyblue"></i>
+                       </div>
+             <div class="info">
+             <div class="user-details">
+                       <div class="input-box">
+                       <span class="details">Card Name</span>
+                       <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+                       <div class="input-box">
+                       <span class="details">Card Number</span>
+                       <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                       <div class="row">
+                           <div class="input-box">
+                               <label for="expyear">Exp Year</label>
+                               <input type="text" id="expyear" name="expyear" placeholder="2018">
+                               <label for="cvv">CVV</label>
+                               <input type="text" id="cvv" name="cvv" placeholder="352">
+                   </div>
+               </div> 
+                       </div>
+               </div>
+   </div>
+   
+     </div>
+     </div>
+     </div>
+     </div>
+     </div>
+     </div>
+     </form>
+     <main class="container">
+     <div class="plans-container">
+     
+     <label for="hallA-select" class="plans HallA-plan"> 
+     <input type="radio" 
+     name="plan-conatiner" 
+     id="hallA-select"
+     value="hallA-select"
+     class="plan-selector"
+     checked
+     />
+     <div class="HallA-description">
+     <h3 class="Plan-title venue1">BALL ROOM</h3>
+     <small class="Plan-description">Hall A</small>
+     </div>
+     <section class="HallA-Price">
+     <h3 class="price">70,000</h3>
+     <small>10% off</small>
+     </section>
+     </label>
+     
+     <label for="hallB-select" class="plans HallB-plan">
+     <input type="radio" 
+     name="plan-conatiner" 
+     id="hallB-select"
+     value="hallB-select"
+     class="plan-selector"
+     checked
+     />
+     <div class="HallB-description">
+     <h3 class="Plan-title venue2">PARTY ROOM</h3>
+     <small class="Plan-description">Hall B</small>
+     </div>
+     <section class="HallB-Price">
+     <h3 class="price">60,000</h3>
+     <small>10% off</small>
+     </section>
+     </label>
+     
+     <label for="pool-select" class="plans Pool-plan">
+     <input type="radio" 
+     name="plan-conatiner" 
+     id="pool-select"
+     value="pool-select"
+     class="plan-selector"
+     checked
+     />
+     <div class="Pool-description">
+     <h3 class=" Plan-title venue3"> POOL SIDE </h3>
+     <small class="Plan-description">Pool</small>
+     </div>
+     <section class="Pool-Price">
+     <h3 class="price">30,000</h3>
+     <small>10% off</small>
+     </section>
+     </label>
+     
+     <label for="Garden-select" class="plans Garden-plan">
+     <input type="radio" 
+     name="plan-conatiner" 
+     id="Garden-select"
+     value="Garden-select"
+     class="plan-selector"
+     checked
+     />
+     <div class="Garden-description">
+     <h3 class="plan-title venue4 ">MAGIC GARDEN</h3>
+     <small class="Plan-description">Garden</small>
+     </div>
+     <section class="Garden-Price">
+     <h3 class="price">25,000</h3>
+     <small>10% off</small>
+     </section>
+     </label>
+     </div>
+     <div class="checkout-container">
+     <h3 class="plan-type">
+     <span class="plan-type-description">Venue</span>
+     <span class="plan-type-amount">----</span>
+     </h3>
+     <div class="billing">
+     <div class="billing-description">
+     <h4>Total</h4>
+     <small class="billing-period">Billed</small>
+     </div>
+     <h3 class="billing-amount">----</h3>
+     </div>
+     <button class="checkout-btn">CHECKOUT</button>
+     </div>
+   </main>
+   <script src="new 1.js"></script>	
+</body>
+</html>
